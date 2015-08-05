@@ -29,5 +29,7 @@ namespace Oppskrifter.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Oppskrifter.Models.Recipe> Recipes { get; set; }
     }
 }
