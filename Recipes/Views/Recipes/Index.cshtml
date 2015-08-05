@@ -18,7 +18,13 @@
             @Html.DisplayNameFor(model => model.Instructions)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Ingredients)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.BakingInstructions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
         </th>
         <th></th>
     </tr>
@@ -32,7 +38,13 @@
             @Html.DisplayFor(modelItem => item.Instructions)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Ingredients)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.BakingInstructions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

@@ -47,7 +47,7 @@ namespace Recipes.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Instructions,BakingInstructions")] Recipe recipe)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Instructions,Ingredients,BakingInstructions, Amount")] Recipe recipe)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Recipes.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Instructions,BakingInstructions")] Recipe recipe)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Instructions,Ingredients,BakingInstructions, Amount")] Recipe recipe)
         {
             if (ModelState.IsValid)
             {
