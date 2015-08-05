@@ -19,5 +19,8 @@ namespace Recipes.Models
         public string BakingInstructions { get; set; }
 
         public string Amount { get; set; }
+
+        public int Rating { get; set; }
+
     }
 }
