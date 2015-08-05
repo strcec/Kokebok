@@ -1,0 +1,12 @@
+﻿@model Recipes.Models.Recipe
+
+<div>
+    <h4>@Model.Name</h4>
+    <p class="text-danger">@Model.Amount</p>
+    <p class="ingredients">@Model.Ingredients</p>
+    <p class="instructions">@Model.Instructions</p>
+    <p class="baking">@Model.BakingInstructions</p>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+</p>

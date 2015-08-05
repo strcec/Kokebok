@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes", "Recipes\Recipes.csproj", "{6B232995-1E2B-486D-A309-5667195AF897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{7EB45470-DBB7-4599-AC31-8FA8813DC3C2}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{C75CE083-7F2A-41A1-A940-0130DDA18A94}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\Recipes-WAWS-dev.json = PublishScripts\Configurations\Recipes-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B232995-1E2B-486D-A309-5667195AF897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B232995-1E2B-486D-A309-5667195AF897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B232995-1E2B-486D-A309-5667195AF897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B232995-1E2B-486D-A309-5667195AF897}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C75CE083-7F2A-41A1-A940-0130DDA18A94} = {7EB45470-DBB7-4599-AC31-8FA8813DC3C2}
+	EndGlobalSection
+EndGlobal
